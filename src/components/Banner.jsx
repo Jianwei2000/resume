@@ -3,8 +3,11 @@ import "../styles/Banner.scss";
 export default function Banner() {
   return (
     <>
-      <section className="banner">
-        <img src="" alt="人物" />
+      <section id="banner">
+        <div className="intro"></div>
+        <div className="pic">
+        <img src="about.jpg" alt="人物" />
+        </div>
       </section>
     </>
   );
