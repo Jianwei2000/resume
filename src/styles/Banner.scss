@@ -1,25 +1,89 @@
-#banner{
+#banner {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+  padding: 5rem 8%;
+  background-image: linear-gradient(to bottom, #060606, #060606, #7f6e5b);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+  .pic {
+    img {
+      box-shadow: 10px 10px 10px gray;
+      border-radius: 50%;
+      width: 30vw;
+      max-height: 550px;
+      object-fit: cover;
+    }
+  }
+
+  .intro {
+    span {
+      color: #7f6e5b;
+    }
+    h1 {
+      font-size: 4rem;
+      line-height: 1.5;
+      font-weight: 700;
+    }
+    h2 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      font-weight: 700;
+    }
+
+    p {
+      font-size: 20px;
+    }
+  }
+
+  .social {
+    a {
+      text-decoration: none;
+      color: #fff;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: 4rem;
+      height: 4rem;
+      border-radius: 50%;
+      font-size: 2rem;
+      margin: 3rem 1.5rem 3rem 0;
+      border: #7f6e5b 2px solid;
+    }
+  }
+  .smoke {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-image: url("banner-bg.jpg");
-    background-position: center;
-    background-size: cover;
+    height: 100%;
+    background-image: url("smoke.png");
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    .pic{
-        margin-right: 10rem;
-        width: 30rem;
-        height: 30rem;
-        border: 2px solid rgb(246, 240, 240);
-        border-radius: 50%;
-        overflow: hidden;
-        img{
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
+    background-position: center;
+    object-fit: cover;
+    opacity: 0;
+    animation: smokeAnimation 20s infinite ease-in-out;
+  }
+}
+
+@keyframes smokeAnimation {
+    0% {
+        transform: translateY(100vh) ; 
+        opacity: 0; 
+    }
+    50% {
+        
+        opacity: 0.3; 
+    }
+    100% {
+        transform: translateY(-20vh) scale(2.5); 
+        opacity: 0; 
     }
 }

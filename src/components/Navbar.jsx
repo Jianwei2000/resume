@@ -4,15 +4,13 @@ export default function Navbar(){
     return(
         <>
             <div className="navbar">
-                <div className="logo">
-                    <h1>JianWei</h1>
-                </div>
-                <ul>
-                    <li>About</li>
-                    <li>SKills</li>
-                    <li>Experience</li>
-                    <li>Portfolio</li>
-                </ul>
+                <a href="#" className="logo">JianWei</a>
+                <nav>
+                    <a href="">About</a>
+                    <a href="">Skills</a>
+                    <a href="">Experience</a>
+                    <a href="">Portfolio</a>
+                </nav>
             </div>
         </>
     )
