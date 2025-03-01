@@ -8,12 +8,13 @@ import { DiJavascript } from "react-icons/di";
 import { IoLogoVue } from "react-icons/io5";
 import { RiReactjsLine } from "react-icons/ri";
 import { SiMysql } from "react-icons/si";
+
 export default function Skills() {
   const skills = {
     html: 90,
     css: 95,
-    javascript: 70,
-    react: 65,
+    javascript: 80,
+    react: 75,
     vue: 50,
     mysql: 75,
     php: 40,
@@ -21,40 +22,74 @@ export default function Skills() {
   };
 
   useEffect(() => {
-    gsap
-      .timeline({
-        scrollTrigger: {
-          trigger: "#skills",
-          start: "top 50%",
-          markers: true,
-        },
-      })
-      .to(".level", {
-        width: (index) => `${Object.values(skills)[index]}%`, // 動態設定寬度
-        duration: 5,
-      })
-      .fromTo(
-        ".level span",
-        { innerHTML: "0%", opacity: 0 },
-        {
-          opacity: 1,
-          innerHTML: (index) => `${Object.values(skills)[index]}%`, // 動態設定數字
+    let ctx = gsap.context(() => {
+      gsap
+        .timeline({
+          scrollTrigger: {
+            trigger: "#skills",
+            start: "top 30%",
+            // markers: true,
+          },
+        })
+        .fromTo(
+          ".container",
+          {
+            rotateX: 10,
+            opacity: 0,
+            rotateY:25,
+          },
+          {
+            rotateX: -10,
+            rotateY: 25,
+            opacity: 1,
+            duration: 2,
+          }
+        )
+        .to(".level", {
+          width: (index) => `${Object.values(skills)[index]}%`, // 動態設定寬度
           duration: 5,
-          stagger: 0.1, // 動畫延遲
-          snap: { innerHTML: 1 }, // 保證數字每次增加的最小單位是 1
-        },
-        "<"
-      );
+        })
+        .fromTo(
+          ".level span",
+          { innerHTML: "0%", opacity: 0 },
+          {
+            opacity: 1,
+            innerHTML: (index) => `${Object.values(skills)[index]}%`, // 動態設定數字
+            duration: 5,
+            stagger: 0.1, // 動畫延遲
+            snap: { innerHTML: 1 }, // 保證數字每次增加的最小單位是 1
+          },
+          "<"
+        );
+    });
+    return () => ctx.revert();
   }, []);
+
+  const handleMouseEnter = () => {
+    gsap.to(".container", {
+      scale: 1.1,
+      rotateX: 0,
+      rotateY: 0,
+      duration: 0.5,
+    });
+  };
+  const handleMouseLeave = () => {
+    gsap.to(".container", {
+      scale: 1,
+      rotateX: -10,
+      rotateY: 25,
+      duration: 0.5,
+    });
+  };
 
   return (
     <>
       <section id="skills">
-        <div className="skills-title">
-          能力值 <span>Skills</span>
-        </div>
-
-        <div className="container">
+        <div
+          className="container"
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+        >
           <div className="frontend">
             {/* <h2>Front-End</h2> */}
             <div className="skill">

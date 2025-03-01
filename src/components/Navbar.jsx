@@ -8,8 +8,8 @@ export default function Navbar(){
                 <nav>
                     <a href="">About</a>
                     <a href="">Skills</a>
-                    <a href="">Experience</a>
                     <a href="">Portfolio</a>
+                    <a href="">Experience</a>
                 </nav>
             </div>
         </>
