@@ -14,7 +14,7 @@ export default function Portfolio() {
             start: "top top",
             end: "+=3000",
             scrub: 4,
-            markers: true,
+            // markers: true,
             pin: true,
           },
         })
@@ -122,7 +122,7 @@ export default function Portfolio() {
         </div>
 
         <div className="flex-wrap">
-          <div class="wrap1">
+          <div className="wrap1">
             <a href="https://jianwei2000.github.io/labor.github.io/jslearn/index.html" target="blink">
               <img src="portfolio/07.PNG" alt="" />
             </a>
@@ -136,7 +136,7 @@ export default function Portfolio() {
               <img src="portfolio/08.PNG" alt="" />
             </a>
           </div>
-          <div class="wrap2">
+          <div className="wrap2">
             <a href="https://jianwei2000.github.io/SunHairSalon.github.io/SunHairSalon/designer.html" target="blink">
               <img src="portfolio/10.PNG" alt="" />
             </a>

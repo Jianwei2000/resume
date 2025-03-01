@@ -1,4 +1,5 @@
 import Banner from "./components/Banner";
+import Experience from "./components/Experience";
 import Navbar from "./components/navbar";
 import Portfolio from "./components/Portfolio";
 import Skills from "./components/Skills";
@@ -10,6 +11,7 @@ export default function App() {
       <Banner />
       <Skills />
       <Portfolio />
+      <Experience />
     </>
   );
 }
