@@ -18,7 +18,7 @@
       width: 500px;
       height: 300px;
       overflow: hidden;
-      border-radius: 10px;
+      border-radius: 30px;
       display: grid;
       place-items: center;
       img {
@@ -29,11 +29,44 @@
     }
   }
 
-  .portfolio-title{
+  .portfolio-title {
     position: absolute;
     bottom: 0;
     right: 200px;
     font-size: 3rem;
     font-weight: bold;
+    z-index: 2;
+  }
+
+  .flex-wrap {
+    position: absolute;
+    top: 150px;
+    left: 0;
+    a {
+        overflow: hidden;
+        transition: 0.5s;
+      img {
+        width: 500px;
+        height: 300px;
+        border-radius: 30px;
+    }
+    &:hover{
+      transform: scale(1.2);
+    }
+    }
+    .wrap1 {
+      width: 100%;
+    
+      display: flex;
+      gap: 2vw;
+      margin-bottom: 5vh;
+      transform-style: preserve-3d;
+    }
+    .wrap2 {
+      width: 100%;
+      
+      display: flex;
+      gap: 2vw;
+    }
   }
 }
