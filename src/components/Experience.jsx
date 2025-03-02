@@ -27,88 +27,95 @@ export default function Experience() {
         )
         .fromTo(
           "#year2019",
-          { opacity: 0, z: 1000, rotateY: 0 },
+          { opacity: 0, scale:3, rotateY: 0 },
           {
+            scale:1,
             opacity: 1,
+            x:-200,
             z: -1500,
-            x: -500,
-            y: -5,
-            rotateY: -45,
+            y:-600,
+            rotateY: -15,
             duration: 4,
           }
         )
         .fromTo(
           "#year2020",
-          { opacity: 0, z: 1500, rotateY: 0 },
+          { opacity: 0, scale:3, rotateY: 0 },
           {
+            scale:1,
             opacity: 1,
-            z: -800,
-            x: -500,
-            y: -5,
-            rotateY: -35,
+            z: -900,
+            x: -100,
+            y: -400,
+            rotateY: -15,
             duration: 4,
           }
         )
         .fromTo(
           "#year2021",
-          { opacity: 0, z: 2000, rotateY: 0 },
+          { opacity: 0, scale:3, rotateY: 0 },
           {
+            scale:1,
             opacity: 1,
-            z: -600,
-            x: -400,
-            y: -50,
-            rotateY: -25,
+            z: -500,
+            x: 0,
+            y: -250,
+            
             duration: 4,
           }
         )
         .fromTo(
           "#year2022",
-          { opacity: 0, z: 2500, rotateY: 0 },
+          { opacity: 0, scale:3, rotateY: 0 },
           {
+            scale:1,
             opacity: 1,
-            z: -400,
-            x: -200,
-            y: -200,
-            rotateY: 35,
+            z: -300,
+            x: 100,
+            y: -100,
+       
             duration: 4,
           }
         )
         .fromTo(
           "#year2023",
-          { opacity: 0, z: 2500, rotateY: 0 },
+          { opacity: 0, scale:3, rotateY: 0 },
           {
+            scale:1,
             opacity: 1,
-            z: -100,
-            x: -100,
-            y: -400,
+            z: 0,
+            x: 200,
+            y: 10,
             rotateY: 15,
             duration: 4,
           }
         )
         .fromTo(
           "#year2024",
-          { opacity: 0, z: 2500, rotateY: 0 },
+          { opacity: 0, scale:3, rotateY: 0 },
           {
+            scale:1,
             opacity: 1,
-            z: 0,
-            x: -100,
-            y: -600,
-
+            z: 200,
+            x: 200,
+            y: 100,
+         
             duration: 4,
           }
         )
         .fromTo(
           "#year2025",
-          { opacity: 0, z: 2500, rotateY: 0 },
+          { opacity: 0, scale:3, rotateY: 0 },
           {
+            scale:1,
             opacity: 1,
             z: 500,
-
-            y: -800,
-
+            x: 200,
+            y: 150,
             duration: 4,
           }
-        );
+        )
+      
     });
     return () => ctx.revert();
   }, []);
