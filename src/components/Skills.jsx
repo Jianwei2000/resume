@@ -32,7 +32,7 @@ export default function Skills() {
           },
         })
         .fromTo(
-          ".container",
+          ".skills-card",
           {
             rotateX: 10,
             opacity: 0,
@@ -66,7 +66,7 @@ export default function Skills() {
   }, []);
 
   const handleMouseEnter = () => {
-    gsap.to(".container", {
+    gsap.to(".skills-card", {
       scale: 1.1,
       rotateX: 0,
       rotateY: 0,
@@ -74,7 +74,7 @@ export default function Skills() {
     });
   };
   const handleMouseLeave = () => {
-    gsap.to(".container", {
+    gsap.to(".skills-card", {
       scale: 1,
       rotateX: -10,
       rotateY: 25,
@@ -86,7 +86,7 @@ export default function Skills() {
     <>
       <section id="skills">
         <div
-          className="container"
+          className="skills-card"
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >

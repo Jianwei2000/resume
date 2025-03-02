@@ -7,4 +7,17 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   overflow: hidden;
+ 
+  .road{
+    // transform: rotate(-90deg);
+  
+    max-width: 1500px;
+    min-height: 100%;
+    img{
+      width: 100%;
+      min-height: 100%;
+      object-fit: contain;
+    }
+
+  }
 }
