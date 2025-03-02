@@ -4,7 +4,7 @@ import { SiGmail } from "react-icons/si";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
-import { LazyLoadImage } from "react-lazy-load-image-component";
+
 
 export default function Banner() {
   
@@ -12,7 +12,7 @@ export default function Banner() {
     <>
       <section id="banner">
         <div className="pic">
-          <LazyLoadImage src="about.jpg" alt="人物" effect="blur" />
+          <img src="about.jpg" alt="人物"  />
         </div>
 
         <div className="intro">

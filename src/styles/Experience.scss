@@ -1,4 +1,5 @@
 #exp {
+  position: relative;
   width: 100%;
   height: 100vh;
   background-image: linear-gradient(to bottom, #010101, #010101, #7f6e5b);
@@ -7,17 +8,47 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   overflow: hidden;
- 
-  .road{
-    // transform: rotate(-90deg);
-  
-    max-width: 1500px;
-    min-height: 100%;
-    img{
-      width: 100%;
-      min-height: 100%;
-      object-fit: contain;
-    }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-right: 20px;
 
+  perspective: 1500px;
+  .road {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    img {
+      width: 100;
+      height: 100%;
+      object-fit: contain;
+      transform: translateY(20px);
+    }
+  }
+
+  .exp-card {
+    transform: translateY(200vh);
+    margin-top: 8rem;
+    display: flex;
+    z-index: 2;
+    transform-style: preserve-3d;
+
+    .year {
+      font-size: 2rem;
+      margin-right: 2vw;
+    }
+    .exp-content {
+      border: #fff 4px solid;
+      background-color: #7f6e5b;
+      border-radius: 10px;
+      width: 350px;
+      height: 150px;
+      padding: 2rem;
+
+
+      
+    }
   }
 }
