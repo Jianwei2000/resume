@@ -22,7 +22,8 @@
     }
     nav{
         a{
-           cursor: pointer;
+           
+            cursor: pointer;
             padding: 20px;
             width: 60px;
             height: 40px;
@@ -30,10 +31,17 @@
             text-decoration: none;      
             color: #FFF;
             font-weight: 500;
-            &.active{
-             
-                border-bottom: 5px solid #FFF;
+            transition: 0.5s;
+            &:hover{
+                color: #7f6e5b;
+            
             }
+            &.active{
+                
+                border-bottom: 5px solid #7f6e5b;
+                
+            }
+           
         }
     }
 }

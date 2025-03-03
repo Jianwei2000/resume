@@ -17,7 +17,7 @@ export default function Banner() {
           <h1>
             健洧 <span>JianWei</span>
           </h1>
-          
+
           <p>
             自從接觸程式設計以來，寫程式對我來說不僅是工作，更是成就感的來源，這也是我選擇進入技術領域的初衷。
             2024年結束兵役後，我開始一邊經營網路個人賣場，一邊自學網頁開發技術，這段時間讓我深刻感受到學習資源有限，且學習方式缺乏效率。
@@ -26,10 +26,10 @@ export default function Banner() {
             並且期待能在未來的職場中發揮所學，迎接更多挑戰。
           </p>
           <div className="social">
-            <a href="">
+            <a href="https://github.com/Jianwei2000" target="blink">
               <FaGithub />
             </a>
-            <a href="">
+            <a href="#">
               <SiGmail />
             </a>
           </div>
