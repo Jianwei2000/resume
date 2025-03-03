@@ -1,27 +1,39 @@
+
 .navbar{
+
+    font-family: "Poetsen One", sans-serif;
     position: fixed;
     top: 0;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    //border: 2px solid red;
     padding: 2rem 8%;
     background: transparent;
     z-index: 99;
     .logo{
+        
         text-decoration: none;
         color: #FFF;
         font-size: 2.5rem;
         font-weight: bold;
+        letter-spacing: 10px;
+        text-shadow: 10px 5px 10px gray;
     }
     nav{
         a{
+           cursor: pointer;
+            padding: 20px;
+            width: 60px;
+            height: 40px;
             font-size: 1.5rem;
-            text-decoration: none;
-            margin-left: 4rem;
+            text-decoration: none;      
             color: #FFF;
             font-weight: 500;
+            &.active{
+             
+                border-bottom: 5px solid #FFF;
+            }
         }
     }
 }
