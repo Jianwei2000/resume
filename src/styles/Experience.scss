@@ -75,4 +75,29 @@
     }
     
   }
+
+  @media(max-width:960px){
+    .exp-title{
+      right: 20px;
+      font-size: 2.4rem;
+    }
+    .exp-content{
+      &:nth-child(odd){
+        .card-wrap{
+     
+          padding:10rem 0  10rem 0;
+        }
+      }
+      &:nth-child(even){
+        .card-wrap{
+     
+          padding-right: 0;
+        }
+      }
+      .card-wrap{
+        flex-direction: column;
+       
+      }
+    }
+  }
 }

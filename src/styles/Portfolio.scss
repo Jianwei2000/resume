@@ -41,6 +41,13 @@
       font-family: "Poetsen One", sans-serif;
       
     }
+    @media(max-width:960px){
+      font-size: 2.4rem;
+      right: 20px;
+      span{
+        
+      }
+    }
   }
 
   .flex-wrap {

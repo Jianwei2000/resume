@@ -81,7 +81,26 @@
     opacity: 0;
     animation: smokeAnimation 15s infinite ease-in-out;
   }
+
+
+  @media(max-width:960px){
+    flex-direction: column;
+    gap: 4rem;
+    .pic{
+      img{
+        width: 100%;
+      }
+    }
+    .intro{
+      h1{
+        font-size: 3rem;
+      }
+    }
+  }
 }
+
+
+
 
 @keyframes smokeAnimation {
     0% {

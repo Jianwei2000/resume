@@ -101,4 +101,14 @@
       }
     }
   }
+
+  @media(max-width:960px){
+
+    padding: 4rem 8%;
+    .skills-card{
+      width: 100%;
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
 }
