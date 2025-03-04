@@ -5,9 +5,9 @@ export default function Navbar() {
   const [activeSection, setActiveSection] = useState("");
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const handleMenu = ()=>{
-    setMenuOpen(isOpen => !isOpen)
-  }
+  const handleMenu = () => {
+    setMenuOpen((isOpen) => !isOpen);
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -60,6 +60,7 @@ export default function Navbar() {
             onClick={(e) => {
               e.preventDefault();
               scrollToSection("#banner");
+              
             }}
             className={activeSection === "#banner" ? "active" : ""}
           >
