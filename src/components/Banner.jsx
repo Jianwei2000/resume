@@ -2,10 +2,23 @@ import "../styles/Banner.scss";
 import { FaGithub } from "react-icons/fa6";
 import { SiGmail } from "react-icons/si";
 import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger);
+import { useEffect } from "react";
+
 
 export default function Banner() {
+  useEffect(() => {
+    let ctx = gsap.context(() => {
+      gsap
+        .timeline()
+        .fromTo(
+          "#banner",
+          { opacity: 0, scale: 1.2 },
+          { opacity: 1, scale: 1, duration: 1, delay: 1 }
+        );
+    });
+    return () => ctx.revert();
+  }, []);
+
   return (
     <>
       <section id="banner">
