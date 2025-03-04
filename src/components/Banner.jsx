@@ -4,19 +4,20 @@ import { SiGmail } from "react-icons/si";
 import gsap from "gsap";
 import { useEffect } from "react";
 
-
 export default function Banner() {
   useEffect(() => {
-    let ctx = gsap.context(() => {
-      gsap
-        .timeline()
-        .fromTo(
-          "#banner",
-          { opacity: 0, scale: 1.2 },
-          { opacity: 1, scale: 1, duration: 1, delay: 1 }
-        );
-    });
-    return () => ctx.revert();
+   
+      let ctx = gsap.context(() => {
+        gsap
+          .timeline()
+          .fromTo(
+            "#banner",
+            { opacity: 0, scale: 1.2 },
+            { opacity: 1, scale: 1, duration: 1 }
+          );
+      });
+      return () => ctx.revert();
+  
   }, []);
 
   return (

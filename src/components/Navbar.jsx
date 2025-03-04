@@ -3,6 +3,11 @@ import "../styles/Navbar.scss";
 
 export default function Navbar() {
   const [activeSection, setActiveSection] = useState("");
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const handleMenu = ()=>{
+    setMenuOpen(isOpen => !isOpen)
+  }
 
   useEffect(() => {
     const handleScroll = () => {
@@ -47,7 +52,10 @@ export default function Navbar() {
         <a href="/" className="logo">
           JianWei
         </a>
-        <nav>
+        <div className="ham" onClick={handleMenu}>
+          <div className="middle"></div>
+        </div>
+        <nav className={menuOpen ? "isOpen" : ""}>
           <a
             onClick={(e) => {
               e.preventDefault();

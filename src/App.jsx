@@ -5,8 +5,10 @@ import Navbar from "./components/Navbar";
 import Portfolio from "./components/Portfolio";
 import Skills from "./components/Skills";
 import Loading from "./components/Loading";
+import Footer from "./components/Footer";
 
 export default function App() {
+
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -30,10 +32,11 @@ export default function App() {
   return (
     <>
       <Navbar />
-      <Banner />
+      <Banner isLoading={false}/>
       <Skills />
       <Portfolio />
       <Experience />
+      <Footer/>
     </>
   );
 }

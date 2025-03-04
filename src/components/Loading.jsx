@@ -8,7 +8,7 @@ export default function Loading() {
       gsap
         .timeline()
         .fromTo(
-          ".container",
+          ".loader",
           { opacity: 1, scale: 1 },
           { opacity: 0, scale: 5, delay: 2, duration: 1 }
         )

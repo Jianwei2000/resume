@@ -13,7 +13,7 @@ export default function Experience() {
             trigger: "#exp",
             pin: true,
             start: "top top",
-            end: "+=6000",
+            end: "+=5000",
 
             scrub: 4,
           },
@@ -37,7 +37,7 @@ export default function Experience() {
           "<"
         )
         .fromTo(".exp-content", { opacity: 0 }, { opacity: 1 }, "<")
-        .fromTo(".exp-content", { y: 0 }, { y: "-280vh" });
+        .fromTo(".exp-content", { y: 0 }, { y: "-220vh" });
     });
     return () => ctx.revert();
   }, []);
@@ -107,7 +107,7 @@ export default function Experience() {
             <div className="card">
               <h3>電商海外代購-倉管人員</h3>
               <p>
-                即將畢業離開高雄，在住家附近找了一份工作，一邊做一邊學，
+                即將要大學畢業離開高雄，在住家附近找了一份工作，一邊做一邊學，
                 因為我也想經營網路生意。就這樣一路做到兵單來通知，準備進入中華民國不願役。
               </p>
             </div>
