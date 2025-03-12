@@ -6,18 +6,16 @@ import { useEffect } from "react";
 
 export default function Banner() {
   useEffect(() => {
-   
-      let ctx = gsap.context(() => {
-        gsap
-          .timeline()
-          .fromTo(
-            "#banner",
-            { opacity: 0, scale: 1.2 },
-            { opacity: 1, scale: 1, duration: 1 }
-          );
-      });
-      return () => ctx.revert();
-  
+    let ctx = gsap.context(() => {
+      gsap
+        .timeline()
+        .fromTo(
+          "#banner",
+          { opacity: 0, scale: 1.2 },
+          { opacity: 1, scale: 1, duration: 1 }
+        );
+    });
+    return () => ctx.revert();
   }, []);
 
   return (
@@ -43,7 +41,7 @@ export default function Banner() {
             <a href="https://github.com/Jianwei2000" target="blink">
               <FaGithub />
             </a>
-            <a href="#">
+            <a href="mailto:er891129@gmail.com">
               <SiGmail />
             </a>
           </div>

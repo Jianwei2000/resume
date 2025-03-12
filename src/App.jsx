@@ -15,7 +15,7 @@ export default function App() {
     const handleLoad = () => {
       setTimeout(() => {
         setIsLoading(false); // 資源已經載入完成，更新狀態為 false
-      }, 3000);
+      }, 5000);
     };
 
     window.onload = handleLoad; // 等待頁面資源完全載入後觸發
