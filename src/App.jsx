@@ -32,7 +32,7 @@ export default function App() {
   return (
     <>
       <Navbar />
-      <Banner isLoading={false}/>
+      <Banner />
       <Skills />
       <Portfolio />
       <Experience />
