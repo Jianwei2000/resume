@@ -10,7 +10,7 @@ export default function Loading() {
         .fromTo(
           ".loader",
           { opacity: 1, scale: 1 },
-          { opacity: 0, scale: 5, delay: 2, duration: 1 }
+          { opacity: 0, scale: 2.5, delay: 4, duration: 1 }
         )
     });
     return () => ctx.revert();
