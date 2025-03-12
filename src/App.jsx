@@ -17,16 +17,13 @@ export default function App() {
       }, 5000);
     };
 
-    window.onload = handleLoad; // 等待頁面資源完全載入後觸發
-
     return () => {
-      window.onload = null; // 清理事件處理器
       clearTimeout(handleLoad);
     };
   }, []);
 
   if (isLoading) {
-    return <Loading />;
+    <Loading />;
   }
 
   return (
