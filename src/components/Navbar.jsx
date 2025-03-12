@@ -49,7 +49,7 @@ export default function Navbar() {
   return (
     <>
       <div className="navbar">
-        <a href="/" className="logo">
+        <a href="/resume" className="logo">
           JianWei
         </a>
         <div className="ham" onClick={handleMenu}>
@@ -60,7 +60,6 @@ export default function Navbar() {
             onClick={(e) => {
               e.preventDefault();
               scrollToSection("#banner");
-              
             }}
             className={activeSection === "#banner" ? "active" : ""}
           >
