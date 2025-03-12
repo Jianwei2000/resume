@@ -8,7 +8,6 @@ import Loading from "./components/Loading";
 import Footer from "./components/Footer";
 
 export default function App() {
-
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -22,6 +21,7 @@ export default function App() {
 
     return () => {
       window.onload = null; // 清理事件處理器
+      clearTimeout(handleLoad);
     };
   }, []);
 
@@ -36,7 +36,7 @@ export default function App() {
       <Skills />
       <Portfolio />
       <Experience />
-      <Footer/>
+      <Footer />
     </>
   );
 }
