@@ -8,26 +8,25 @@ import Loading from "./components/Loading";
 import Footer from "./components/Footer";
 
 export default function App() {
-  const [isLoading, setIsLoading] = useState(true);
 
-  useEffect(() => {
-    const handleLoad = () => {
-      setTimeout(() => {
-        setIsLoading(false); // 資源已經載入完成，更新狀態為 false
-      }, 5000);
-    };
+  useEffect(()=>{
+     // 禁止滾動
+    document.body.style.overflow = "hidden";
+    document.documentElement.style.overflow = "hidden";
 
-    return () => {
-      clearTimeout(handleLoad);
-    };
-  }, []);
+    return ()=>{
+      setTimeout(()=>{
 
-  if (isLoading) {
-    <Loading />;
-  }
+        document.body.style.overflow = "auto";
+        document.documentElement.style.overflow = "auto";
+      },4000)
+    }
+
+  },[])
 
   return (
     <>
+      <Loading />;
       <Navbar />
       <Banner />
       <Skills />

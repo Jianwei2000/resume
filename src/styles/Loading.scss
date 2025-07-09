@@ -1,13 +1,18 @@
 .container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	overflow: hidden;
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+	background-color: #000;
 }
 .loader {
-    
-    width: 350px;
+	
+	width: 350px;
     height: 350px;
     border-radius: 100%;
     background: linear-gradient(165deg, rgba(255,255,255,1) 0%, rgb(220, 220, 220) 40%, rgb(170, 170, 170) 98%, rgb(10, 10, 10) 100%);
