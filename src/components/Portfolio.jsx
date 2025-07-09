@@ -68,7 +68,7 @@ export default function Portfolio() {
           {
             x: -2200,
           },
-          { x: 50 },
+          { x: 80 },
           "<"
         );
     });

@@ -4,7 +4,9 @@ import gsap from "gsap";
 
 export default function Loading() {
   useEffect(() => {
-   
+     // 禁止滾動
+    document.body.style.overflow = "hidden";
+    document.documentElement.style.overflow = "hidden";
 
     let ctx = gsap.context(() => {
       gsap
@@ -21,7 +23,11 @@ export default function Loading() {
     });
     
     return () => {
-     
+     setTimeout(()=>{
+
+        document.body.style.overflow = "auto";
+        document.documentElement.style.overflow = "auto";
+      },4000)
       ctx.revert()
     };
   }, []);
