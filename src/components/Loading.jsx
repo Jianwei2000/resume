@@ -10,7 +10,15 @@ export default function Loading() {
 
     let ctx = gsap.context(() => {
       gsap
-        .timeline()
+        .timeline({
+        onComplete: () => {
+          // ✅ 動畫結束後恢復滾動
+          gsap.set("body", { overflow: "auto" });
+          gsap.set("html", { overflow: "auto" });
+        },
+      })
+        .set("body", { overflow: "hidden" })
+        .set("html", { overflow: "hidden" })
         .fromTo(
           ".loader",
           { opacity: 1, scale: 1 },
@@ -23,11 +31,6 @@ export default function Loading() {
     });
     
     return () => {
-     setTimeout(()=>{
-
-        document.body.style.overflow = "auto";
-        document.documentElement.style.overflow = "auto";
-      },4000)
       ctx.revert()
     };
   }, []);
