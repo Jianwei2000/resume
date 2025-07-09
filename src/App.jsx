@@ -26,7 +26,7 @@ export default function App() {
 
   return (
     <>
-      <Loading />;
+      <Loading />
       <Navbar />
       <Banner />
       <Skills />
