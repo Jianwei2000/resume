@@ -4,6 +4,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect } from "react";
 gsap.registerPlugin(ScrollTrigger);
 import { FaHtml5, FaCss3Alt, FaPhp, FaNode } from "react-icons/fa";
+import { SiDotnet } from "react-icons/si";
 import { DiJavascript } from "react-icons/di";
 import { IoLogoVue } from "react-icons/io5";
 import { RiReactjsLine } from "react-icons/ri";
@@ -16,9 +17,11 @@ export default function Skills() {
     javascript: 80,
     react: 75,
     vue: 50,
-    mysql: 75,
+    mysql: 85,
     php: 40,
     node: 45,
+    dotnet: 38,
+   
   };
 
   useEffect(() => {
@@ -229,6 +232,22 @@ export default function Skills() {
               <div className="skill-bar">
                 <div className="level">
                   <span>{skills.node}%</span>
+                </div>
+              </div>
+            </div>
+            <div className="skill">
+              <p>
+                <SiDotnet  style={{
+                    color: "#5a27e6ff",
+                    fontSize: "40px",
+                    marginRight: "10px",
+                  }}/>
+               
+                MVC
+              </p>
+              <div className="skill-bar">
+                <div className="level">
+                  <span>{skills.dotnet}%</span>
                 </div>
               </div>
             </div>

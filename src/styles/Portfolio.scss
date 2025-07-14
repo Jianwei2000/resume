@@ -7,6 +7,10 @@
   padding: 2rem;
   width: 100%;
   perspective: 1500px;
+  @media(max-width:768px){
+    padding: 0 40px;
+    min-height: auto;
+  }
   .grid-wrap {
     width: 105%;
     height: auto;
@@ -27,6 +31,9 @@
         object-fit: cover;
       }
     }
+    @media(max-width:768px){
+      display: none;
+    }
   }
 
   .portfolio-title {
@@ -44,11 +51,18 @@
     @media(max-width:960px){
       font-size: 2.4rem;
       right: 20px;
-      span{
-        
-      }
+    }
+    @media(max-width:768px){
+      font-size: 1.8rem;
+      position: static;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+      
     }
   }
+  
 
   .flex-wrap {
     position: absolute;
@@ -79,6 +93,26 @@
       
       display: flex;
       gap: 2vw;
+    }
+    @media(max-width:768px){
+      margin-top: 40px;
+      position: static;
+      a{
+
+        img{
+          width: 100%;
+        }
+      }
+      .wrap1{
+        gap: 50px;
+        flex-direction: column;
+        margin-bottom: 50px;
+      }
+      .wrap2{
+        gap: 50px;
+        flex-direction: column;
+        margin-bottom: 50px;
+      }
     }
   }
 }

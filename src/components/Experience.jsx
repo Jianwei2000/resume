@@ -5,42 +5,45 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Experience() {
-  useEffect(() => {
-    let ctx = gsap.context(() => {
-      gsap
-        .timeline({
-          scrollTrigger: {
-            trigger: "#exp",
-            pin: true,
-            start: "top top",
-            end: "+=5000",
+  if(window.innerWidth>768){
 
-            scrub: 4,
-          },
-        })
-        .fromTo(
-          ".exp-title",
-          {
-            opacity: 0,
-          },
-          {
-            y: -100,
-            opacity: 1,
-          }
-        )
-        .fromTo(
-          ".road",
-          {
-            opacity: 0,
-          },
-          { opacity: 1 },
-          "<"
-        )
-        .fromTo(".exp-content", { opacity: 0 }, { opacity: 1 }, "<")
-        .fromTo(".exp-content", { y: 0 }, { y: "-300vh" });
-    });
-    return () => ctx.revert();
-  }, []);
+    useEffect(() => {
+      let ctx = gsap.context(() => {
+        gsap
+          .timeline({
+            scrollTrigger: {
+              trigger: "#exp",
+              pin: true,
+              start: "top top",
+              end: "+=5000",
+  
+              scrub: 4,
+            },
+          })
+          .fromTo(
+            ".exp-title",
+            {
+              opacity: 0,
+            },
+            {
+              y: -100,
+              opacity: 1,
+            }
+          )
+          .fromTo(
+            ".road",
+            {
+              opacity: 0,
+            },
+            { opacity: 1 },
+            "<"
+          )
+          .fromTo(".exp-content", { opacity: 0 }, { opacity: 1 }, "<")
+          .fromTo(".exp-content", { y: 0 }, { y: "-300vh" });
+      });
+      return () => ctx.revert();
+    }, []);
+  }
   return (
     <>
       <section id="exp">
@@ -121,7 +124,7 @@ export default function Experience() {
               <p>
                 服完兵役後，開始經營我的網路個人賣場，然後一邊尋找程式領域相關的工作機會，
                 在求職過程中，遭受到的打槍、洗臉大過於建議，於是我開始專心的自學我想要開發的技術，
-                直到我發現自己的學習成效不佳，也缺乏團隊合作的經驗，最後下了決心前往資策會受訓。
+                直到我發現自己的學習成效不佳，也缺乏團隊合作的經驗，最後下了決心前往資展(原資策會)受訓。
               </p>
             </div>
           </div>
@@ -132,7 +135,7 @@ export default function Experience() {
             <div className="card">
               <h3>目標</h3>
               <p>
-                在資策會受訓這段期間，很慶幸我們這組有專門畫設計稿的，讓我學到最寶貴的是如何和設計師溝通合作。
+                在資展受訓這段期間，很慶幸我們這組有專門畫設計稿的，讓我學到最寶貴的是如何和設計師溝通合作。
                 對於結訓後的求職目標和方向，我依然隨緣，未來的變數不可控，我只做好當下的自己。就算未來沒有公司要我，
                 當我的level到達一個程度，我還是會自己出來接case。
               </p>

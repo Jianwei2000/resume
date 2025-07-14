@@ -100,4 +100,30 @@
       }
     }
   }
+
+  @media(max-width:768px){
+    height: auto;
+    .road{
+      img{
+        object-fit: fill;
+        opacity: 0.4;
+      }
+    }
+    .exp-title{
+      margin-top: 60px;
+      position: static;
+      text-align: center;
+    }
+    .exp-content{
+      &:nth-child(odd){
+        .card-wrap{
+          padding: 10px 0;
+        }
+      }
+      .card-wrap{
+        gap: 10px;
+      }
+      margin-bottom: 40px;
+    }
+  }
 }
