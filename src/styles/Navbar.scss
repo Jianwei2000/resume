@@ -71,7 +71,7 @@
   @media (max-width: 960px) {
     padding: 2rem 0;
     flex-wrap: wrap;
-
+    height: 60px;
     .logo {
       font-size: 2rem;
       margin-left: 8%;
@@ -84,14 +84,7 @@
       margin-bottom: 2rem;
       margin-right: 8%;
       transition: 0.5s;
-      &.active {
-        .middle {
-        }
-        &::before {
-        }
-        &::after {
-        }
-      }
+      
     }
     nav {
       transform: translateX(100%);
@@ -103,10 +96,10 @@
       background-color: #7f6e5b;
       text-align: center;
       transition: 0.5s;
+      z-index: -100;
       a {
         height: 100%;
         width: 100%;
-
         border: 2px solid #fff;
         &:hover {
           color: #fff;
@@ -120,6 +113,7 @@
       &.isOpen {
         opacity: 1;
         transform: translateX(0);
+        z-index: 100;
       }
     }
   }
