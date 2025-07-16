@@ -98,7 +98,7 @@ export default function Portfolio() {
             <img src="portfolio/03.PNG" />
           </div>
           <div className="grid-item">
-            <img src="portfolio/04.PNG" />
+            <img src="portfolio/14.PNG" />
           </div>
           <div className="grid-item">
             <img src="portfolio/05.PNG" />
@@ -149,8 +149,8 @@ export default function Portfolio() {
             <a href="https://jianwei2000.github.io/SunHairSalon.github.io/SunHairSalon/designer.html" target="_blank">
               <img src="portfolio/10.PNG" />
             </a>
-            <a href="https://jianwei2000.github.io/DREAMBAR.github.io/JQueryPractice/index.html" target="_blank">
-              <img src="portfolio/09.PNG" />
+            <a href="https://jianwei2000.github.io/visualArts/" target="_blank">
+              <img src="portfolio/14.PNG" />
             </a>
             <a href="https://jianwei2000.github.io/migrant/" target="_blank">
               <img src="portfolio/04.PNG" />

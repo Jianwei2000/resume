@@ -39,7 +39,7 @@ export default function Experience() {
             "<"
           )
           .fromTo(".exp-content", { opacity: 0 }, { opacity: 1 }, "<")
-          .fromTo(".exp-content", { y: 0 }, { y: "-300vh" });
+          .fromTo(".exp-content", { y: 0 }, { y: "-200vh" });
       });
       return () => ctx.revert();
     }, []);
