@@ -70,7 +70,7 @@ export default function Portfolio() {
               {
                 x: -2200,
               },
-              { x: 80 },
+              { x: 60 },
               "<"
             );
         });

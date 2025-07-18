@@ -15,7 +15,7 @@ export default function Skills() {
     html: 90,
     css: 95,
     javascript: 80,
-    react: 75,
+    react: 65,
     vue: 50,
     mysql: 85,
     php: 40,

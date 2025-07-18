@@ -1,36 +1,36 @@
 #exp {
   position: relative;
   width: 100%;
-  height: 100vh;
   background-image: linear-gradient(to bottom, #010101, #010101, #7f6e5b);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   overflow: hidden;
-
-  perspective: 1500px;
   .road {
-    z-index: -1;
     position: absolute;
+    bottom: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    transform-style: preserve-3d;
+    opacity:0.3;
+    z-index: 0;
     img {
-      width: 100vw;
+      width: 100%;
       height: 100%;
-      object-fit: contain;
+      object-fit: cover;
       transform: translateY(20px);
     }
   }
 
   .exp-title {
-    position: absolute;
-    bottom: 0;
-    right: 100px;
+    text-shadow: #FFF 0px 0px 30px;
+    position: relative;
+    margin-top: 100px;
+    text-align: center;
     font-size: 3rem;
     font-weight: bold;
-    z-index: 2;
+    z-index: 5;
     span {
       margin-left: 20px;
       font-family: "Poetsen One", sans-serif;
@@ -38,35 +38,40 @@
   }
 
   .exp-content {
+    position: relative;
+    z-index: 10;
     width: 80%;
-    margin: 0 auto;
-    &:nth-child(odd){
-      .card-wrap{
+    margin: 10vh auto;
    
-        padding:10rem 0  10rem 50%;
-      }
-    }
-    &:nth-child(even){
-      .card-wrap{
-   
-        padding-right: 50%;
-      }
-    }
     .card-wrap{
       width: 100%;
+      // padding: 0 10vw;
       display: flex;
       gap: 20px;
+     
       .year{
         font-size: 2rem;
+        .arrow{
+          font-size: 3rem;
+          margin-top: 20px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          animation: updown 3s ease-in-out infinite;
+        }
       }
       .card{
+        box-shadow: #FFF 0px 0px 30px;
+        width: 100%;
         border-radius: 30px;
         padding: 20px;
-        border: 1px solid #FFF;
+        border: none;
+        background: rgba(0, 0, 0, 0.6);
         h3{
           font-size: 1.5rem;
           padding: 10px 0;
           font-weight: bold;
+          
         }
         p{
           line-height: 2rem;
@@ -76,54 +81,35 @@
     
   }
 
-  @media(max-width:960px){
+  @media (max-width: 960px) {
     .exp-title{
-      right: 20px;
-      font-size: 2.4rem;
+     font-size: 2.4rem;
     }
-    .exp-content{
-      &:nth-child(odd){
-        .card-wrap{
-     
-          padding:10rem 0  10rem 0;
-        }
-      }
-      &:nth-child(even){
-        .card-wrap{
-     
-          padding-right: 0;
-        }
-      }
-      .card-wrap{
-        flex-direction: column;
-       
+    .road{
+      img{
+        object-fit: fill;
+        opacity: 0.8;
       }
     }
   }
 
   @media(max-width:768px){
-    height: auto;
-    .road{
-      img{
-        object-fit: fill;
-        opacity: 0.4;
-      }
-    }
+    // height: auto;
     .exp-title{
-      margin-top: 60px;
-      position: static;
-      text-align: center;
+     font-size: 1.8rem;
     }
-    .exp-content{
-      &:nth-child(odd){
-        .card-wrap{
-          padding: 10px 0;
-        }
-      }
-      .card-wrap{
-        gap: 10px;
-      }
-      margin-bottom: 40px;
-    }
+   
+  }
+}
+
+@keyframes updown{
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(-10px);
+  }
+  100%{
+    transform: translateY(0);
   }
 }

@@ -49,7 +49,7 @@ export default function Navbar() {
   return (
     <>
       <div className="navbar">
-        <a href="/resume" className="logo">
+        <a href="/resume/" className="logo">
           JianWei
         </a>
         <div className="ham" onClick={handleMenu}>
