@@ -101,7 +101,7 @@ export default function Portfolio() {
             <img src="portfolio/14.PNG" />
           </div>
           <div className="grid-item">
-            <img src="portfolio/05.PNG" />
+            <img src="portfolio/04.PNG" />
           </div>
           <div className="grid-item">
             <img src="portfolio/06.PNG" />
@@ -125,6 +125,13 @@ export default function Portfolio() {
             <img src="portfolio/13.PNG" />
           </div>
           <div className="grid-item">
+            <img src="portfolio/15.PNG" />
+          </div>
+          
+          <div className="grid-item">
+            <img src="portfolio/05.PNG" />
+          </div>
+          <div className="grid-item">
             <img src="portfolio/12.PNG" />
           </div>
          
@@ -141,9 +148,10 @@ export default function Portfolio() {
             <a href="https://jianwei2000.github.io/Tea-Talk/#/" target="_blank">
               <img src="portfolio/01.PNG" />
             </a>
-            <a href="https://jianwei2000.github.io/blog.github.io/Blog/index.html" target="_blank">
-              <img src="portfolio/08.PNG" />
+             <a href="https://jianwei2000.github.io/migrant/" target="_blank">
+              <img src="portfolio/05.PNG" />
             </a>
+            
           </div>
           <div className="wrap2">
             <a href="https://jianwei2000.github.io/SunHairSalon.github.io/SunHairSalon/designer.html" target="_blank">
@@ -152,8 +160,8 @@ export default function Portfolio() {
             <a href="https://jianwei2000.github.io/visualArts/" target="_blank">
               <img src="portfolio/14.PNG" />
             </a>
-            <a href="https://jianwei2000.github.io/migrant/" target="_blank">
-              <img src="portfolio/04.PNG" />
+           <a href="https://jianwei2000.github.io/healthAnalysis/" target="_blank">
+              <img src="portfolio/15.PNG" />
             </a>
             <a href="https://jianwei2000.github.io/jump/" target="_blank">
               <img src="portfolio/13.PNG" />
