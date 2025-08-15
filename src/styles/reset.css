@@ -58,17 +58,17 @@ table {
   
   /* 設定滾動條的背景 */
   ::-webkit-scrollbar-track {
-	background: #f1f1f1;  /* 滾動條的背景顏色 */
+	background: #ffffffbb;  /* 滾動條的背景顏色 */
 	border-radius: 10px;
   }
   
   /* 設定滑塊的樣式 */
   ::-webkit-scrollbar-thumb {
-	background: #888;  /* 滑塊顏色 */
+	background: #7f6e5b;  /* 滑塊顏色 */
 	border-radius: 10px;
   }
   
   /* 當滑塊被 hover 時的樣式 */
   ::-webkit-scrollbar-thumb:hover {
-	background: #555;  /* 滑塊 hover 顏色 */
+	background: #765e45;  /* 滑塊 hover 顏色 */
   }
