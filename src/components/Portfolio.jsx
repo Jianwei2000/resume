@@ -142,14 +142,14 @@ export default function Portfolio() {
             <a href="https://jianwei2000.github.io/labor.github.io/jslearn/index.html" target="_blank">
               <img src="portfolio/07.PNG" />
             </a>
-            <a href="https://jianwei2000.github.io/ToDoList/" target="_blank">
-              <img src="portfolio/06.PNG" />
+            <a href="https://chuanfa.vercel.app/" target="_blank">
+              <img src="portfolio/12.PNG" />
             </a>
             <a href="https://jianwei2000.github.io/Tea-Talk/#/" target="_blank">
               <img src="portfolio/01.PNG" />
             </a>
-             <a href="https://jianwei2000.github.io/migrant/" target="_blank">
-              <img src="portfolio/05.PNG" />
+             <a href="https://jianwei2000.github.io/TooCool/" target="_blank">
+              <img src="portfolio/04.PNG" />
             </a>
             
           </div>
@@ -163,7 +163,7 @@ export default function Portfolio() {
            <a href="https://jianwei2000.github.io/healthAnalysis/" target="_blank">
               <img src="portfolio/15.PNG" />
             </a>
-            <a href="https://jianwei2000.github.io/jump/" target="_blank">
+            <a href="https://chatlds.onrender.com/" target="_blank">
               <img src="portfolio/13.PNG" />
             </a>
           </div>

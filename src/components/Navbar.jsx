@@ -49,7 +49,14 @@ export default function Navbar() {
   return (
     <>
       <div className="navbar">
-        <a href="/resume/" className="logo">
+        <a
+          onClick={(e) => {
+            e.preventDefault();
+            scrollToSection("#banner");
+          }}
+          className="logo"
+          
+        >
           JianWei
         </a>
         <div className="ham" onClick={handleMenu}>

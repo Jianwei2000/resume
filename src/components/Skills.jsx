@@ -12,14 +12,14 @@ import { SiMysql } from "react-icons/si";
 
 export default function Skills() {
   const skills = {
-    html: 90,
-    css: 95,
+    html: 95,
+    css: 98,
     javascript: 80,
-    react: 65,
+    react: 75,
     vue: 50,
     mysql: 85,
     php: 40,
-    node: 45,
+    node: 69,
     dotnet: 38,
    
   };

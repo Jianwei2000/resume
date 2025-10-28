@@ -11,8 +11,8 @@ export default function Banner() {
         .timeline()
         .fromTo(
           "#banner",
-          { opacity: 0, scale: 1.2 },
-          { opacity: 1, scale: 1, duration: 1 }
+          { opacity: 0},
+          { opacity: 1, duration: 1 }
         );
     });
     return () => ctx.revert();
